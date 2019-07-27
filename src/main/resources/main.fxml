@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sharon.home_security.Controllers.Controller">
+   <children>
+      <Button fx:id="cameraButton" layoutX="494.0" layoutY="614.0" mnemonicParsing="false" onAction="#startCamera" text="Start Camera" />
+      <ImageView fx:id="originalFrame" fitHeight="450.0" fitWidth="600.0" layoutX="220.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true" />
+      <CheckBox fx:id="grayScale" layoutX="200.0" layoutY="56.0" mnemonicParsing="false" text="Show in gray scale" />
+      <CheckBox fx:id="haarClassifier" layoutX="464.0" layoutY="58.0" mnemonicParsing="false" onAction="#haarSelected" text="Haar Classifier" />
+      <CheckBox fx:id="lbpClassifier" layoutX="752.0" layoutY="64.0" mnemonicParsing="false" onAction="#lbpSelected" text="LBP Classifier" />
+   </children>
+</Pane>
